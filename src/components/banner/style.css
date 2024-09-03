@@ -1,0 +1,38 @@
+header{
+    background-image: url("/public/assets/banner.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.texto-banner{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto-banner h1{
+    color: #fff;
+    font-size: 42px;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+.texto-banner p{
+    color: #daa520;
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+    width: 600px;
+}
+
+@media (max-width:720px) {
+    .texto-banner p{
+        font-size: 26px;
+        width: 80%;
+    }
+}

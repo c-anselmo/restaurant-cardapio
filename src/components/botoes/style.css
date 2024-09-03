@@ -1,0 +1,67 @@
+.section-botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px 30px;
+}
+
+button{
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: #daa520;
+    transition: .2s;
+}
+
+.icone{
+    width: 25px;
+}
+
+.acenderBtn {
+    background-color: #daa520;
+}
+
+@media (max-width:768px) {
+    button{
+        width: 200px;
+    }
+
+    .container-botoes{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:450px) {
+    button{
+        width: 150px;
+    }
+}
+
+@media (max-width:375px) {
+    button{
+        width: 100px;
+    }
+    button span{
+        display: none;
+    }
+}
